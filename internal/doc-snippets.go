@@ -20,7 +20,7 @@ import (
 	"context"
 	"fmt"
 
-	firestore "github.com/adrianduke/google-cloud-go"
+	firestore "github.com/adrianduke/firestore"
 	"google.golang.org/api/iterator"
 )
 
