@@ -12,4 +12,4 @@ require (
 	google.golang.org/grpc v1.29.1
 )
 
-replace cloud.google.com/go => github.com/adrianduke/google-cloud-go v0.59.2
+replace cloud.google.com/go => github.com/adrianduke/google-cloud-go v0.59.3
