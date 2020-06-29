@@ -18,7 +18,7 @@ import (
 	"context"
 	"errors"
 
-	"cloud.google.com/go/internal/trace"
+	"github.com/adrianduke/google-cloud-go/internal/trace"
 	pb "google.golang.org/genproto/googleapis/firestore/v1"
 )
 

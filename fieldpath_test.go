@@ -19,7 +19,7 @@ import (
 	"strings"
 	"testing"
 
-	"cloud.google.com/go/internal/testutil"
+	"github.com/adrianduke/google-cloud-go/internal/testutil"
 )
 
 func TestFieldPathValidate(t *testing.T) {

@@ -18,7 +18,7 @@ import (
 	"context"
 	"errors"
 
-	"cloud.google.com/go/internal/trace"
+	"github.com/adrianduke/google-cloud-go/internal/trace"
 	gax "github.com/googleapis/gax-go/v2"
 	pb "google.golang.org/genproto/googleapis/firestore/v1"
 	"google.golang.org/grpc/codes"

@@ -23,7 +23,7 @@ import (
 	"sort"
 
 	vkit "github.com/adrianduke/firestore/apiv1"
-	"cloud.google.com/go/internal/trace"
+	"github.com/adrianduke/google-cloud-go/internal/trace"
 	"google.golang.org/api/iterator"
 	pb "google.golang.org/genproto/googleapis/firestore/v1"
 	"google.golang.org/grpc/codes"

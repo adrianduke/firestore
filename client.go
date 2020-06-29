@@ -24,8 +24,8 @@ import (
 	"time"
 
 	vkit "github.com/adrianduke/firestore/apiv1"
-	"cloud.google.com/go/internal/trace"
-	"cloud.google.com/go/internal/version"
+	"github.com/adrianduke/google-cloud-go/internal/trace"
+	"github.com/adrianduke/google-cloud-go/internal/version"
 	"github.com/golang/protobuf/ptypes"
 	gax "github.com/googleapis/gax-go/v2"
 	"google.golang.org/api/iterator"
