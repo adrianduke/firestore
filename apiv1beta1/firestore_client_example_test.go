@@ -20,7 +20,7 @@ import (
 	"context"
 	"io"
 
-	firestore "github.com/adrianduke/firestore/apiv1beta1"
+	firestore "cloud.google.com/go/firestore/apiv1beta1"
 	"google.golang.org/api/iterator"
 	firestorepb "google.golang.org/genproto/googleapis/firestore/v1beta1"
 )
