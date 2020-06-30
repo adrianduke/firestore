@@ -22,8 +22,8 @@ import (
 	"reflect"
 	"sort"
 
-	vkit "github.com/adrianduke/firestore/apiv1"
 	"cloud.google.com/go/internal/trace"
+	vkit "github.com/adrianduke/firestore/apiv1"
 	"google.golang.org/api/iterator"
 	pb "google.golang.org/genproto/googleapis/firestore/v1"
 	"google.golang.org/grpc/codes"
@@ -142,7 +142,7 @@ func (d *DocumentRef) newCreateWrites(data interface{}) ([]*pb.Write, error) {
 	if d == nil {
 		return nil, errNilDocRef
 	}
-	doc, transforms, err := toProtoDocument(data)
+	doc, transforms, err := ToProtoDocument(data)
 	if err != nil {
 		return nil, err
 	}
@@ -178,7 +178,7 @@ func (d *DocumentRef) newSetWrites(data interface{}, opts []SetOption) ([]*pb.Wr
 		return nil, errors.New("firestore: nil document contents")
 	}
 	if len(opts) == 0 { // Set without merge
-		doc, serverTimestampPaths, err := toProtoDocument(data)
+		doc, serverTimestampPaths, err := ToProtoDocument(data)
 		if err != nil {
 			return nil, err
 		}
